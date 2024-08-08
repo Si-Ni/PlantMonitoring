@@ -6,5 +6,5 @@ class TemperatureSensor(Sensor):
         super().__init__(pin)
         self.sensor = adafruit_dht.DHT11(pin)
         
-    def read(self, retries):
+    def read(self):
         return self.sensor.temperature
