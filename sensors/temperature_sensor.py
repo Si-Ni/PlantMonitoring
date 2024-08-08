@@ -1,2 +1,4 @@
 import adafruit_dht
-from board import D21
+
+def create_temperature_sensor(pin):
+	return adafruit_dht.DHT11(pin)
