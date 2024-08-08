@@ -1,0 +1,8 @@
+{
+	"sensors": {
+		"retry_attempts": 5
+	},
+	"azure_servicebus": {
+		"sending_interval": 60
+	}
+}
