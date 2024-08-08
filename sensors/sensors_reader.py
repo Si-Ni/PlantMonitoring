@@ -1,16 +1,14 @@
 import time
 from utils.generate_dto_azure import generate_dto_azure
 
-sensors_dto = generate_dto_azure()
-
-
 def read_sensors(sensors, retries):
+    sensors_dto = generate_dto_azure()
     for sensor in sensors:
-        try_reading_sensor(sensor, retries)
+        try_reading_sensor(sensor, retries, sensors_dto)
     return sensors_dto
 
 
-def try_reading_sensor(sensor, retries):
+def try_reading_sensor(sensor, retries, sensors_dto):
     value = None
     for attempt in range(1, retries + 1):
         try:
