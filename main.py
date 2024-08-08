@@ -1,9 +1,9 @@
-from utils.get_sensor_pins import get_pin2sensor
+from utils.get_sensors_config import get_sensors_config
 from sensors.sensors_factory import build_sensors
+from sensors.sensors_reader import read_sensors
 
-sensors = build_sensors(get_pin2sensor())
+sensors = build_sensors(get_sensors_config())
+print(read_sensors(sensors, 5))
 
-temperature = sensors[0]["sensor"].temperature
-humidity = sensors[1]["sensor"].humidity
 
 print(temperature, humidity)

@@ -1,0 +1,10 @@
+{
+  "temperature": {
+    "pin": "D21",
+    "unit": "°C"
+  },
+  "humidity": {
+    "pin": "D16",
+    "unit": "%"
+  }
+}
