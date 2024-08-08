@@ -1,8 +1,0 @@
-{
-  "temperature_sensor": {
-    "pin": "D21"
-  },
-  "humidity_sensor": {
-    "pin": "D16"
-  }
-}

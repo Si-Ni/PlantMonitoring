@@ -1,5 +1,11 @@
+from .sensor import Sensor
 import adafruit_dht
 
 
-def create_temperature_sensor(pin):
-    return adafruit_dht.DHT11(pin)
+class TemperatureSensor(Sensor):
+    def __init__(self, pin):
+        super().__init__(pin)
+        self.sensor = adafruit_dht.DHT11(pin)
+
+    def read(self):
+        return self.sensor.temperature
