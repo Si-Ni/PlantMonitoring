@@ -1,6 +1,7 @@
 import time
 from utils.generate_dto_azure import generate_dto_azure
 
+
 def read_sensors(sensors, retries):
     sensors_dto = generate_dto_azure()
     for sensor in sensors:

@@ -6,6 +6,7 @@ credentials = get_credentials()
 uri = credentials["azure_servicebus"]["uri"]
 queue_name = credentials["azure_servicebus"]["queue_name"]
 
+
 def send_data(sensor_data):
     try:
         with ServiceBusClient.from_connection_string(uri) as client:

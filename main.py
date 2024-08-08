@@ -8,6 +8,7 @@ from services.servicebus_azure import send_data
 config = get_config()
 sensors = build_sensors(get_sensors_config())
 
+
 def monitor_and_send():
     try:
         retry_attempts = config["sensors"]["retry_attempts"]
@@ -16,7 +17,8 @@ def monitor_and_send():
         print("sensor data has been sent", sensor_data)
     except Exception as error:
         print(error)
-        
+
+
 if __name__ == "__main__":
     interval = config["azure_servicebus"]["sending_interval"]
     schedule_task(monitor_and_send, interval)
