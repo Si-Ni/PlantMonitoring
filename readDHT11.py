@@ -70,9 +70,9 @@ def main():
 			print('Error retrieving sensor data:', error)
 		else:
 			print('Retrieved sensor data:', sensor_data)
-			send_data(sensor_data)
+			#send_data(sensor_data)
         
-		time.sleep(5)
+		break
 
 if __name__ == '__main__':
 	main()

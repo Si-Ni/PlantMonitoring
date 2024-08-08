@@ -4,7 +4,7 @@ from .humidity_sensor import create_humidity_sensor
 def create_sensors(sensor_config):
 	sensors = []
 	for sensor, config in sensor_config.items():
-		sensors.append({ 
+		sensors.append({
 			'name': sensor, 
 			'sensor': build_sensor(sensor, config['pin'])
 		})
