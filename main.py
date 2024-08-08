@@ -4,6 +4,6 @@ from sensors.sensors_reader import read_sensors
 
 sensors = build_sensors(get_sensors_config())
 try:
-	print(read_sensors(sensors, 5))
+    print(read_sensors(sensors, 5))
 except Exception as error:
-	print(error)
+    print(error)

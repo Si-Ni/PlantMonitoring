@@ -1,10 +1,17 @@
 from .temperature_sensor import TemperatureSensor
 from .humidity_sensor import HumiditySensor
 
+
 def build_sensors(sensor_config):
     sensors = []
     for sensor, config in sensor_config.items():
-        sensors.append({"name": sensor, "sensor_obj": create_sensor(sensor, config["pin"]), "unit": config["unit"]})
+        sensors.append(
+            {
+                "name": sensor,
+                "sensor_obj": create_sensor(sensor, config["pin"]),
+                "unit": config["unit"],
+            }
+        )
     return sensors
 
 
