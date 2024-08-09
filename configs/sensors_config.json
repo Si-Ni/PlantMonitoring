@@ -1,10 +1,14 @@
 {
   "temperature": {
-    "pin": "D21",
+    "pin": "I2C",
     "unit": "°C"
   },
   "humidity": {
     "pin": "D16",
     "unit": "%"
+  },
+  "pressure": {
+    "pin": "I2C",
+    "unit": "Pa"
   }
 }

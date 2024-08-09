@@ -1,5 +1,6 @@
 from .temperature_sensor import TemperatureSensor
 from .humidity_sensor import HumiditySensor
+from .pressure_sensor import PressureSensor
 
 
 def build_sensors(sensor_config):
@@ -20,5 +21,7 @@ def create_sensor(sensor_name, pin):
         return TemperatureSensor(pin)
     elif sensor_name == "humidity":
         return HumiditySensor(pin)
+    elif sensor_name == "pressure":
+        return PressureSensor(pin)
     else:
         raise ValueError(f"Invalid sensor name: {sensor_name}")
