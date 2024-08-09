@@ -9,5 +9,4 @@ def schedule_task(task, interval):
             time.sleep(interval)
 
     thread = Thread(target=task_wrapper)
-    thread.demon = True
     thread.start()

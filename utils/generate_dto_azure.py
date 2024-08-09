@@ -1,5 +1,5 @@
 import time
 
 
-def generate_dto_azure():
-    return {"ts": time.time(), "sensors": []}
+def generate_dto_azure(plant):
+    return {plant: {"ts": time.time(), "sensors": []}}
