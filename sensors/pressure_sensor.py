@@ -8,5 +8,4 @@ class PressureSensor(Sensor):
         self.sensor = BMP085.BMP085(busnum=1)
 
     def read(self):
-        print(self.sensor.read_altitude())
         return self.sensor.read_pressure()

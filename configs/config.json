@@ -1,4 +1,7 @@
 {
+	"plant": {
+		"name": "test_plant"
+	},
 	"sensors": {
 		"retry_attempts": 5
 	},
