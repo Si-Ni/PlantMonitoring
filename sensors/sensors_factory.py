@@ -2,6 +2,7 @@ from .temperature_sensor import TemperatureSensor
 from .humidity_sensor import HumiditySensor
 from .pressure_sensor import PressureSensor
 from .light_intensity_sensor import LightIntensitySensor
+from .soil_moisture_sensor import SoilMoistureSensor
 
 
 def build_sensors(sensor_config):
@@ -23,6 +24,7 @@ def create_sensor(sensor_name, pin):
         "humidity": HumiditySensor,
         "pressure": PressureSensor,
         "light_intensity": LightIntensitySensor,
+        "soil_moisture": SoilMoistureSensor
     }
     if sensor_name in sensor_types:
         return sensor_types[sensor_name](pin)
