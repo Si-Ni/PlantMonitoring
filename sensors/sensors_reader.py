@@ -23,7 +23,8 @@ def try_reading_sensor(sensor, retries, sensors_dto, plant):
                 break
             else:
                 time.sleep(1)
-        except Exception:
+        except Exception as error:
+            print(error)
             time.sleep(1)
     if value is None:
         raise Exception(f"Reading sensor '{sensor['name']}' failed")
