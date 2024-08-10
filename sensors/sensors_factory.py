@@ -22,10 +22,7 @@ def create_sensor(sensor_name, pin):
         "temperature": TemperatureSensor,
         "humidity": HumiditySensor,
         "pressure": PressureSensor,
-<<<<<<< Updated upstream
-=======
         "light_intensity": LightIntensitySensor
->>>>>>> Stashed changes
     }
     if sensor_name in sensor_types:
         return sensor_types[sensor_name](pin)
