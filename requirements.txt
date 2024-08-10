@@ -1,5 +1,8 @@
 Adafruit-Blinka==8.46.1
 Adafruit-BMP==1.5.4
+adafruit-circuitpython-ads1x15==2.2.26
 adafruit-circuitpython-dht==4.0.4
 azure-servicebus==7.12.2
+numpy==2.0.1
 python-dotenv==1.0.1
+smbus-cffi==0.5.1

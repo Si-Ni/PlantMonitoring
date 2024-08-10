@@ -14,5 +14,9 @@
   "light_intensity": {
     "pin": "I2C",
     "unit": "lx"
+  },
+  "soil_moisture": {
+    "pin": "I2C",
+    "unit": "%"
   }
 }
