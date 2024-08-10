@@ -10,5 +10,9 @@
   "pressure": {
     "pin": "I2C",
     "unit": "Pa"
+  },
+  "light_intensity": {
+    "pin": "I2C",
+    "unit": "lx"
   }
 }
