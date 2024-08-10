@@ -24,7 +24,7 @@ def create_sensor(sensor_name, pin):
         "humidity": HumiditySensor,
         "pressure": PressureSensor,
         "light_intensity": LightIntensitySensor,
-        "soil_moisture": SoilMoistureSensor
+        "soil_moisture": SoilMoistureSensor,
     }
     if sensor_name in sensor_types:
         return sensor_types[sensor_name](pin)
