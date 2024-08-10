@@ -22,7 +22,7 @@ def create_sensor(sensor_name, pin):
         "temperature": TemperatureSensor,
         "humidity": HumiditySensor,
         "pressure": PressureSensor,
-        "light_intensity": LightIntensitySensor
+        "light_intensity": LightIntensitySensor,
     }
     if sensor_name in sensor_types:
         return sensor_types[sensor_name](pin)

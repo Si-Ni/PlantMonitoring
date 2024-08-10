@@ -16,12 +16,13 @@ ONE_TIME_LOW_RES_MODE = 0x23
 
 bus = smbus.SMBus(1)
 
+
 class LightIntensitySensor(Sensor):
     def __init__(self, pin):
         super().__init__(pin)
-        
+
     def convertToNumber(self, data):
-        result=(data[1] + (256 * data[0])) / 1.2
+        result = (data[1] + (256 * data[0])) / 1.2
         return result
 
     def read(self):
