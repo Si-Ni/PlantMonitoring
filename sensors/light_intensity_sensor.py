@@ -27,4 +27,5 @@ class LightIntensitySensor(Sensor):
 
     def read(self):
         data = bus.read_i2c_block_data(DEVICE_ADDRESS, ONE_TIME_HIGH_RES_MODE_1)
-        return self.convertToNumber(data)
+        light_intensity = self.convertToNumber(data)
+        return float(f"{light_intensity:.2f}")
