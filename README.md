@@ -3,7 +3,7 @@
 This is part of the **PlantMonitoring** project, a distributed system designed to monitor environmental data of plants. This specific module focuses on collecting sensor data via a Raspberry Pi, processing it, and then sending it to an Azure Queue for further processing.
 
 # Project Overview
-The PlantMonitoring system is a distributed project built to collect, store, and analyze environmental data for monitoring plant health. This repository handles the Raspberry Pi module, which reads data from various sensors and sends it to Azure Queue.
+The **PlantMonitoring** project is a distributed system designed to collect, store and analyze environmental data for monitoring plant health. This repository handles the Raspberry Pi module, which reads data from various sensors and sends it to Azure Queue.
 
 The main components of the project include:
 
